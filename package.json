@@ -1,0 +1,23 @@
+{
+  "name": "beyond-cordova-plugins",
+  "version": "1.0.0",
+  "description": "corodva plugins for beyond",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/williambai/beyond-cordova-plugins.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin"
+  ],
+  "author": "William Bai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williambai/beyond-cordova-plugins/issues"
+  },
+  "homepage": "https://github.com/williambai/beyond-cordova-plugins"
+}
