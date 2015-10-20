@@ -9,4 +9,6 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <plugin name="de.appplant.cordova.plugin.background-mode" spec="https://github.com/katzer/cordova-plugin-background-mode.git" />
+    <plugin name="com.beyond.cordova.plugins.helloworld" spec="../../projects/helloworld" />
 </widget>
