@@ -30,6 +30,9 @@
     <body>
         <div class="app">
             <h1>Apache Cordova</h1>
+            <h1>
+                <button onclick="test();">Click Me!</button>
+            </h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
@@ -38,31 +41,10 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <!--Demo Plugin HelloWorld.-->
-        <h1>
-        <button onclick="test();">Click Me!</button>
-    </h1>
         <script type="text/javascript">
             function test(){
                 HelloWorld.say();
             }
-        </script>
-        <script type="text/javascript">
-        document.addEventListener('deviceready', function () {
-            // Android customization
-            cordova.plugins.backgroundMode.setDefaults({ text:'Doing heavy tasks.'});
-            // Enable background mode
-            cordova.plugins.backgroundMode.enable();
-
-            // Called when background mode has been activated
-            cordova.plugins.backgroundMode.onactivate = function () {
-                setTimeout(function () {
-                    // Modify the currently displayed notification
-                    cordova.plugins.backgroundMode.configure({
-                        text:'Running in background for more than 5s now.'
-                    });
-                }, 5000);
-            }
-        }, false);
         </script>
     </body>
 </html>
